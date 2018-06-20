@@ -84,13 +84,15 @@ INSERT INTO MovimientoCaja(nombre,descripcion)VALUES('Salida','se realizo la com
 INSERT INTO MovimientoCaja(nombre,descripcion)VALUES('Entrada','Las venta de los productos');
 INSERT INTO MovimientoCaja(nombre,descripcion)VALUES('Prestamo','Se reealizo un prestamo a untrabajador');
 
-INSERT INTO caja VALUES(1000,2);
-INSERT INTO caja VALUES(500,1);
-INSERT INTO caja VALUES(400,3);
-INSERT INTO caja VALUES(2000,2);
-INSERT INTO caja VALUES(3000,2);
-INSERT INTO caja VALUES(4000,2);
-INSERT INTO caja VALUES(3000,1);
+INSERT INTO caja(total,movimiento_id) VALUES(1000,2);
+INSERT INTO caja(total,movimiento_id) VALUES(500,1);
+INSERT INTO caja(total,movimiento_id) VALUES(400,3);
+INSERT INTO caja(total,movimiento_id) VALUES(2000,2);
+INSERT INTO caja(total,movimiento_id) VALUES(3000,2);
+INSERT INTO caja(total,movimiento_id) VALUES(4000,2);
+INSERT INTO caja(total,movimiento_id) VALUES(3000,1);
+
+select*from caja;
 
 INSERT INTO usuario(categoria_id, nombre_usuario, nip, pass, telefono, activo)VALUES(1,'Ana','A12','12An','4661793778',true);
 INSERT INTO usuario(categoria_id, nombre_usuario, nip, pass, telefono, activo)VALUES(2,'Guadalupe','GA13','GPE778','4662345678',TRUE);
@@ -141,7 +143,7 @@ INSERT INTO marca(nombre)VALUES('La Rosa');
 INSERT INTO marca(nombre)VALUES('Vero');
 INSERT INTO marca(nombre)VALUES('Sorics');
 INSERT INTO marca(nombre)VALUES('Ricolino');
-INSERT INTO marac(nombre)VALUES('La costeña');
+INSERT INTO marca(nombre)VALUES('La costeña');
 
 INSERT INTO categoriaArt(nombre)VALUES('Abarrotes');
 INSERT INTO categoriaArt(nombre)VALUES('Cremeria');
@@ -184,20 +186,3 @@ INSERT INTO venta(folio,fecha,articulo_id,cantidadProducto,usuario_id,cliente_id
 INSERT INTO venta(folio,fecha,articulo_id,cantidadProducto,usuario_id,cliente_id,total)VALUES('VART8','2018-06-18',8,4,5,4,52);
 
   
-  
-  
-  
-  select * from marca;
-  select * from categoriaArt;
-  select*from articulo;
-  SELECT*FROM venta;
-  
-
-
-
-
-
-
-
-
-
